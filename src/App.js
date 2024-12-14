@@ -4,7 +4,8 @@ import GlowingButton from './glowbutton';
 
  const App = () => {
   return (
-    <div className='bg-black no-scrollbar'>
+    <div>
+    <div className='bg-black nosc'>
        <div className='fixed z-50 scale-[25%] left-[29.3rem] top-96'>
         <GlowingButton ClickEvent={()=>alert("Ass")}/>
        </div>
@@ -12,7 +13,7 @@ import GlowingButton from './glowbutton';
     <div className='scale-[60%] translate-x-9 -translate-y-9'>
         <FalloutSurvivalNetwork/>
     </div>
-    </div>
+    </div></div>
     
   )
 }
