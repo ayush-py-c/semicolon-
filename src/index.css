@@ -8,6 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
 }
 
 code {
@@ -28,4 +32,22 @@ code {
 
 .flicker-effect {
   animation: flicker 1s infinite;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .scrollbar-hide {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari and Opera */
+  }
 }
