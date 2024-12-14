@@ -78,7 +78,7 @@ const FalloutSurvivalNetwork = () => {
   };
 
   const renderChatSection = () => (
-    <div className="mt-6 bg-black border border-yellow-700 p-4">
+    <div className="noscrollbar mt-6 bg-black border border-yellow-700 p-4">
       <h3 className=" text-xl mb-3 text-yellow-300"><span className='flicker-effect'>&#8594; </span>SURVIVOR COMM CHANNEL</h3>
       
       {/* Message Input Area */}
@@ -88,7 +88,7 @@ const FalloutSurvivalNetwork = () => {
           value={newMessage}
           onChange={(e) => setNewMessage(e.target.value)}
           placeholder="ENTER TRANSMISSION..."
-          className=" flex-grow p-2 bg-black text-yellow-300 border border-yellow-700 uppercase tracking-wider"
+          className=" flex-grow p-2 bg-black text-yellow-300 border border-yellow-700 uppercase tracking-wider no"
           onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
         />
         <button 
