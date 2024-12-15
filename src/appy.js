@@ -228,7 +228,7 @@ const FalloutSurvivalNetwork = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-6 bg-black border border-yellow-700 p-4">
+            <div className="mt-6 bg-black border border-yellow-700 p-4" id='survival'>
               <h3 className="text-xl mb-3 text-yellow-300"><span className='flicker-effect'>&#8594; </span>KEY SURVIVAL TACTICS</h3>&nbsp;
                 <p><span className='flicker-effect'>&gt; </span>Only carry essential items as ammo and even your character's supplies have weight.</p>&nbsp;
                 <p><span className='flicker-effect'>&gt; </span>Avoid unnecessary fights, take cover, and use the environment to your advantage. 
