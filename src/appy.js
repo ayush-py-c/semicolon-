@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TradeMarketplace from './TradeMarketplace';
 
 // Mock data (kept from original code)
 const survivalSkills = [
@@ -43,6 +44,10 @@ const FalloutSurvivalNetwork = () => {
   const [newMessage, setNewMessage] = useState('');
 
   const handleLogin = () => {
+    if (username!=="admin"&& password !== "admin" ){
+      alert("Invalid credentials")
+      return;
+    }
     if (username && password) {
       setUserProfile({
         username: 'VaultDweller_42',
@@ -227,6 +232,11 @@ const FalloutSurvivalNetwork = () => {
                   <p className="text-xs text-red-500">{alert.timestamp}</p>
                 </div>
               ))}
+            </div>
+            <div className="mt-6 bg-black border border-yellow-700 p-4">
+              <h3 className="text-xl mb-3 text-yellow-400"><span className='flicker-effect'>&#8594; </span>EMERGENCY BROADCASTS</h3>
+              <TradeMarketplace></TradeMarketplace>
+              
             </div>
             <div className="mt-6 bg-black border border-yellow-700 p-4" id='survival'>
               <h3 className="text-xl mb-3 text-yellow-300"><span className='flicker-effect'>&#8594; </span>KEY SURVIVAL TACTICS</h3>&nbsp;
